@@ -1,4 +1,4 @@
-require_dependency File.expand_path('../../../lib/redmine/scm/adapters/gitlab_adapter', __FILE__)
+require '../../../lib/redmine/scm/adapters/gitlab_adapter'
 
 class Repository::Gitlab < Repository
   validates_presence_of :url, :password
